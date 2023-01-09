@@ -4,6 +4,6 @@ jobs:
 build:
     - name: Getting key
         env:
-          API_KEY ${{ secrets.__Token__ }}
+          API_KEY ${{ secrets.__TOKEN__ }}
     run: |
       nbdev_test_nbs
