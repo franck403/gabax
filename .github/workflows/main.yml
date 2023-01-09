@@ -1,0 +1,9 @@
+name: run secret
+
+jobs:
+build:
+    - name: Getting key
+        env:
+          API_KEY ${{ secrets.__Token__ }}
+    run: |
+      nbdev_test_nbs
